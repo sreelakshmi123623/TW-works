@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="h-screen">
+    <!--h1 text size in small screen will be 3xl and above small device text size will be 6xl  -->
+    <h1 class="text-center my-8 text-3xl sm:text-6xl">Responsive Desing</h1>
+   <div class="flex justify-center items-center">
+    <!-- when the grid in small screen it will be grid-cols-1 and if it comes to above small size it will be  grid-cols-3-->
+        <div class="w-[50%] h-100 grid sm:grid-cols-12 bg-pink-300 gap-3 p-3 border-1 border-black flex items-center">
+            <div class="bg-rose-950 h-25 text-white text-center sm:col-span-2 transition-all duration-800 ease-in-out hover:scale-120 hover:bg-rose-900">child1</div>
+            <div class="bg-rose-950 h-25 text-white text-center sm:col-span-5 transition-all duration-800 ease-in-out hover:scale-120 hover:bg-rose-900">child2</div>
+            <div class="bg-rose-950 h-25 text-white text-center sm:col-span-5 transition-all duration-800 ease-in-out hover:scale-120 hover:bg-rose-900">child3</div>
+        </div>
+   </div>
+</body>
+</html>

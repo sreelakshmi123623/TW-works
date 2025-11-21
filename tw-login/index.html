@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- tw-cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="bg-purple-900 h-screen flex justify-center items-center">
+    <!-- w-1/2 is the half of the body -->
+    <!-- <form class="bg-purple-300 border-2 w-1/2" action=""> -->
+        <!-- OR -->
+         <!-- we can mention the customized % width in [] ,like [75%],[50%],.....so on , (customizations can mention inside a [])-->
+        <form class="bg-purple-300 border-2 border-black w-[50%] h-1/2 rounded-md leading-[40px]" action="">
+        <h2 class="text-center text-4xl text-blue-900 font-bold my-5">Login</h2>
+        <div class="mx-10">
+            <label for="">username :</label>
+            <input class="border-1 border-white rounded-md w-full" type="text" placeholder="Enter username">
+        </div>
+        <div class="mx-10 my-5">
+            <label for="">password :</label>
+            <input class="border border-white rounded-md w-full" type="password" placeholder="Password">
+        </div>
+        <div class="text-center my-8">
+            <!--hover:bg-blue-900 changing the button background color  when we hover it , hover:text-white changing the text color when hovering it     -->
+            <button class="bg-white rounded-md w-12 h-10 hover:bg-blue-900 hover:text-white">Login</button>
+        </div>
+    </form>
+
+</body>
+
+</html>
